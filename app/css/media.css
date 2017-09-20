@@ -1,0 +1,831 @@
+
+@media all and (max-width: 768px) {
+
+  #coffeein {
+    background-position:  170% 100%, center;
+    background-size: 80%, cover;
+
+  }
+
+  #coffeein .container {
+  padding-top: 30px;
+}
+
+  #coffeein .container > div:nth-child(2){
+    text-align: center;
+  }
+
+  #coffeein .beans1, #coffeein .beans2 {
+    background-position: center bottom 150px ;
+    background-size: 50%;
+  }
+
+  #coffeein .logo, 
+  #coffeein .phone {
+    margin-top: 0;
+  }
+
+  #coffeein .logo {
+    background-size: contain;
+    background-position: center;
+  }
+
+  #coffeein .text-right {
+    text-align: center!important;
+  }
+
+  #coffeein .text-right p {
+    font-size: 0.6rem;
+    text-align: center;
+    margin-bottom: 0;
+
+  }
+
+  #coffeein .text-right button {
+    font-size: 0.6rem;
+    width: 100%;
+    height: 30px;
+  }
+
+  #coffeein .burger {
+  display: block;
+  }
+
+  #coffeein .lead {
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #coffeein .btn-lead {
+    width: 40%;
+    font-size: 1rem;
+}
+
+  #coffeein .lead-margin {
+    font-weight: 900;
+    text-align: center;
+  }
+
+  #coffeein .numbers {
+    margin-top: 60%;
+  }
+
+  #coffeein .numbers > div:last-child {
+    display: none;
+  }
+
+  #coffeein .numbers > div:first-child {
+    padding-left: 30px;
+  }
+
+  #coffeein .numbers > div b {
+    font-size: 15px;
+  }
+
+  #coffeein .numbers > div span {
+    font-size: 13px;
+  }
+
+}
+@media all and (max-width: 480px) {
+  #coffeein .head_cup {
+    position: absolute;
+    background: url(../img/head-cup.png) no-repeat  left 75px top;
+    background-size: 150%;
+    display: block;
+    width: 100%;
+    height: 480px;
+    top: 656px;
+    z-index: 0;
+  }
+  #coffeein .beanse {
+    position: absolute;
+    background: url(../img/beans-1.png), url(../img/beans-1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom 50px;
+    background-size: 100%;
+    display: block;
+    width: 100%;
+    height: 480px;
+    top: 570px;
+    z-index: 20;
+  }
+  #coffeein .lead {
+    font-size: 25px;
+  }
+  #coffeein .container {
+    padding-top: 0;
+  }
+  #coffeein .logo{
+    background-size: 80%;
+  }
+  #coffeein .lead-margin {
+    font-size: 35px;
+    padding: 9px 25px 0;
+  }
+   #coffeein .btn-lead {
+    width: 91%;
+    font-size: 1.3rem;
+  }
+  #coffeein .numbers {
+    display: none;
+  }
+  #coffeein .mobnumbers {
+    display: block;
+  }
+  #coffeein .openings-arrow-left5 {
+    background: url(../img/arrow-left.png) no-repeat right;
+    background-size: 60%;
+    padding: 0;
+  }
+  #coffeein .openings-arrow-right5 {
+    background: url(../img/arrow-right.png) no-repeat left;
+    background-size: 60%;
+    padding: 0;
+  }
+  #coffeein .mobnumbers .item {
+    height: 150px;
+    padding-top: 35px;
+    text-align: center;
+  }
+  #coffeein .mobnumbers > div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #coffeein .mobnumbers > div b {
+    font-size: 1.4rem;
+  }
+  #coffeein .mobnumbers > div span {
+    font-size: 1rem;
+    margin-top: -15px;
+  }
+  #coffeein .mobnumber .slick .item {
+    line-height: 1;
+  }
+  #coffeein {
+    background-image: none, url(../img/head-bg.jpg);
+    background-position:  bottom -30px  right -250px, center;
+    background-size: 135%, cover;
+    height: 1050px
+
+  }
+  #coffeein .beans1 {
+    display: none;
+    position: absolute;
+    background-image: url(../img/head-cup.png), url(../img/beans-1.png);
+    background-position: 70px 660px, top 130px right 30%;
+    background-size: 135%,100%;
+    width: 100%;
+    height: 1000px;
+    z-index: 5;
+  }
+  #coffeein .beans2 {
+    display: none;
+    position: absolute;
+    background: url(../img/beans-2.png) no-repeat;
+    background-position: top 160px right 20%;
+    width: 100%;
+    height: 1000px;
+  }
+  #coffeein .text-right {
+    vertical-align: middle;
+  }
+  #coffeein .text-right svg {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #aeca1e;
+    margin-top: 33px;
+  }
+  #coffeein .text-right p {
+    display: none;
+  }
+  #coffeein .text-right button {
+    display: none;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #coffeein .head_cup {
+    height: 450px;
+    top: 656px;
+    -webkit-background-size: 135%;
+    background-size: 135%;
+
+  }
+   #coffeein .beanse {
+    height: 400px;
+    top: 600px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #coffeein .head_cup {
+    height: 420px;
+    top: 630px;
+    background-size: 160%;
+    background-position: 60px
+  }
+   #coffeein .beanse {
+    height: 350px;
+    top: 656px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #franchise {
+    background: linear-gradient(to right,  #ffffff 0%,#ffffff 70%,#aeca1e 30%,#aeca1e 100%);
+  }
+
+  #franchise .container {
+    margin-left: 25px;
+    margin-right: 25px;
+  }  
+
+  #franchise h3 {
+    margin-top: 46px;
+  }
+
+  #franchise p {
+    font-size: 15px;
+  }
+
+  #franchise .numbers > div:nth-child(2) {
+    display: none;
+  }
+
+  #franchise .numbers h4 {
+    font-size: 30px;
+  }
+
+  #franchise .numbers p {
+    font-size: 15px;
+  }
+  #franchise .pictures-right {
+    display: none;
+  }
+
+  #franchise .pictures-left img {
+    margin-left: -180px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #franchise {
+    background: #fff;
+  }
+  #franchise .container {
+    margin: 0;
+    text-align: center;
+  }
+  #franchise .container .row > div:nth-child(1) > p {
+    padding-right: 0px;
+    padding: 0 13px;
+    margin-bottom: 30px;
+  }
+  #franchise .numbers {
+    background: #aeca1e;
+    margin-top: 0;
+  }
+  #franchise .numbers :nth-child(1) {
+    padding-top: 10px;
+  }
+  #franchise .numbers :nth-child(2) {
+    padding-bottom: 10px;
+  }
+  #franchise .numbers > div:nth-child(2) {
+  display: block; 
+}
+
+
+@media all and (max-width: 480px) {
+  #franchisee .franchisee-title {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 480px) {
+  #openings {
+    padding-left: 0;
+  }
+  #openings h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 60px 0 35px;
+  }
+  #openings .openings-arrows {
+    display: none;
+  }
+  #openings .openings-size {
+    display: none;
+  }
+  #openings .openings-size-320 {
+    display: block;
+  }
+  #openings .openings-size-320 .slick button {
+    display: none!important;
+  }
+  #openings .slick-prev2,
+  #openings .slick-next2 {
+    display: none;
+  }
+  #openings .item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+}
+
+
+@media all and (max-width: 480px) {
+  #media h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0 42px;
+  }
+  .media-size {
+    display: none!important;
+  }
+  .media-size-320 {
+    display: block!important;
+  }
+  .media-size-320 > div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #media .openings-arrow-left3 {
+    background: url(../img/arrow-left.png) no-repeat right;
+    background-size: 50%;
+    padding: 0;
+  }
+  #media .openings-arrow-right3 {
+    background: url(../img/arrow-right.png) no-repeat left;
+    background-size: 50%;
+    padding: 0;
+  }
+
+}
+
+
+@media all and (max-width: 480px) {
+  .callback-line {
+    height: 335px;
+  }
+  .callback-line .be-partner {
+    font-size: 25px;
+  }
+  .callback-line .phone {
+    font-size: 20px;
+  }
+  .callback-line input {
+  }
+  .callback-item {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+
+@media all and (max-width: 480px) {
+  #includes {
+    background: none;
+  }
+  #includes .container {
+    background: none;
+  }
+  #includes .includes-title {
+    padding-top: 50px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  #includes .includes-title h3 {
+    font-size: 25px;
+  }
+  #includes .includes-left {
+    display: none!important;
+  }
+  #includes .includes-left-320 {
+    display: block!important;
+  }
+  #includes .includes-items-320 {
+    padding-right: 0px!important; 
+    padding-left: 0px!important; 
+    padding-top: 20px;
+  }
+   #includes .includes-left-320 > div {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+   #includes .openings-arrow-left6 {
+    background: url(../img/arrow-left.png) no-repeat right 2% top 40px;
+    background-size: 55%;
+    padding: 0;
+  }
+  #includes .openings-arrow-right6 {
+    background: url(../img/arrow-right.png) no-repeat left 2% top 40px;
+    background-size: 55%;
+    padding: 0;
+  }
+  #includes .includes-bottom320 {
+    overflow: hidden;
+    height: 580px;
+    z-index: 2;
+    background: url(../img/man.png) no-repeat #aeca1e;
+    background-image: none;
+    background-position: center bottom;
+    background-size: 90%;
+  }
+  #includes .includes-man {
+  position: absolute;
+  top:207px;
+  left:20px;
+  background-size: 90%;
+  width:320px;
+  height: 600px;
+}
+
+
+@media all and (max-width: 480px) {
+  #knowledge-base h3 {
+    margin: 30px 0 30px;
+    font-size: 25px;
+  }
+  #knowledge-base p {
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  #knowledge-base .container .row:nth-child(3) {
+    display: none;
+  }
+  #knowledge-base h4 {
+    font-size: 20px;
+    padding: 20px 0 50px;
+    text-align: center;
+}
+}
+
+@media all and (max-width: 480px) {
+  #mycoffeein {
+    padding: 40px 0 0px;
+    background: #f8f8f8;
+  }
+  #mycoffeein h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #mycoffeein h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  #mycoffeein .mycoffeein-title {
+    margin: 0 0 20px 0;
+  }
+  #mycoffeein .mycoffeein-arrow-left {
+    display: none;
+  }
+  #mycoffeein .mycoffeein-arrow-right {
+    display: none;
+  }
+  #mycoffeein .mycoffeein-size {
+    display: none;
+  }
+  #mycoffeein .mycoffeein-size-320 {
+    display: block;
+  }
+  #mycoffeein .mycoffeein-size-320 .slick button {
+    display: none!important;
+  }
+  #mycoffeein .mycoffeein-items {
+    height: 250px;
+  }
+}
+
+
+@media all and (max-width: 480px) {
+  #app .i-phone {
+    display: none;
+  }
+  #app {
+    background: #ffffff;
+  }
+  #app h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  #app p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.2;
+  }
+  #app ul {
+    margin-top: 5px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  #app ul li {
+    padding-top: 7px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  #app .app-links {
+    position: absolute;
+    margin-top: 20px;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    top: 1150px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #app .app-links a {
+    float: left;
+    margin-top: 0px;
+  }
+  #app .app-links img {
+    width: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #app .app-links a:nth-child(2) {
+    margin-left: 20px;
+  }
+  #app .phone {
+    left: -20px;
+    margin-top:60px;
+  }
+  #app .container .row > div:nth-child(1) {
+    margin-bottom: -20px;
+    z-index: 9;
+    background: url(../img/beans-1.png), linear-gradient(to bottom,  #f8f8f8 0%, #ffffff 20%);
+    background-size: 200%,100%;
+    background-repeat: no-repeat,no-repeat;
+    background-position: left, center
+  }
+  #app .container .row > div:nth-child(2) {
+    height: 530px;
+    background: url(../img/iphone.png), linear-gradient(to bottom,  #fff 0%, #fff 13%, #aeca1e 13%, #aeca1e 100%);
+    background-size: 70%, 100%;
+    background-repeat: no-repeat;
+    background-position: left 40% bottom 60% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 350px) {
+  #app .container .row > div:nth-child(2) {
+    height: 550px;
+  }
+  #app .app-links {
+    top: 1000px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #investments .container {
+    background: none;
+  }
+  #investments h3 {
+    margin: 50px 0 20px;
+    padding: 0 30px;
+    font-size: 25px;
+    text-align: center;
+  }
+  #investments p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  #investments .numbers {
+    text-align: center;
+    margin: 20px 0 20px;
+  }
+  #investments .numbers-first {
+    margin-top: 0;
+  }
+  #investments .numbers-last {
+    margin-bottom: 0;
+  }
+  #investments .numbers > div {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.1;
+  }
+  #investments .numbers h4 {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #graph{
+    height: 540px;
+  font-size: 16px;
+  background: url(../img/coffee-hand.png) no-repeat left -90px bottom;
+  background-size: 100%;
+  }
+  #graph img {
+    display: none;
+  }
+  #graph .container {
+    text-align: center;
+  }
+  #graph .container > div:nth-child(1) {
+    display: none
+  }
+  #graph .container > div:nth-child(2) {
+    display: none 
+  }
+  #graph .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+}
+
+@media all and (max-width: 400px) {
+  #graph{
+    height: 500px;
+    background-size: 110%;
+    background-position: left -100px bottom;
+  }
+}
+@media all and (max-width: 350px) {
+  #graph{
+    height: 500px;
+    background-size: 130%;
+    background-position: left -130px bottom;
+  }
+}
+
+
+@media all and (max-width: 480px) {
+  #calculator {
+    padding: 50px 0 30px;
+    background-color: #fff;
+  }
+  #calculator h3 {
+    font-size: 25px;
+  }
+  #calculator .calc-content {
+    margin-top: 0px;
+  }
+  #calculator .calc-left {
+    text-align: center;
+    padding: 35px 35px 0;
+  }
+  #calculator .calc-left-item {
+    padding: 0;
+    height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #calculator .calc-left-item h5{
+    font-size: 20px;
+  }
+  #calculator .calc-left-item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  #calculator .calc-left-item:nth-child(4) {
+    margin-bottom: 30px;
+  }
+  #calculator .calc-right .result {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  #calculator .calc-content .calc-right .calc-right-content {
+    background: #fafafa!important;
+  }
+  #calculator .calc-right .calccon-item  {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left:15px;
+    margin-right: 15px;
+  }
+  #calculator .calc-right .calccon-item:nth-child(3)  {
+    border:none;
+  }
+  #calculator .calc-right .result-bottom {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  #calculator .calc-right .calccon-item-title {
+    padding: 0;
+  }
+  #calculator .calc-right .calccon-item-title span {
+    font-size: 18px;
+  }
+  #calculator .calc-right .calccon-item-result {
+    font-size: 20px;
+  }
+  #calculator .calc-bottom {
+    margin-top: 20px;
+  }
+
+}
+
+
+@media all and (max-width: 480px) {
+  #question {
+    background-size: 350%;
+    background-position: -160px 15px;
+  }
+  #question .question-right{
+    margin-top:400px;
+  }
+  #question .question-right{
+    margin-top: 450px;
+    padding: 0; 
+    height: auto;
+  }
+  #question .question-right-title {
+    color: #000;
+    padding-top: 80px;
+    text-align: center;
+  }
+  #question .question-right-title h3 {
+   font-size: 25px;
+  }
+  #question .question-right-button {
+    text-align: center;
+    padding: 0 15px 40px;
+  }
+}
+@media all and (max-width: 350px) {
+  #question .question-right {
+    margin-top: 350px;
+  }
+}
+
+
+
+@media all and (max-width: 480px) {
+  footer {
+    height: 120px;
+  }
+  footer .footer-content {
+   padding-top: 20px;
+   padding-bottom: 10px;
+   text-align: center;
+}
+
+}
+
+@media all and (max-width: 480px) {
+  .popup{
+    width: 100%;
+    left: 0;
+    padding: 30px 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .popup .container{
+    width: 80%;
+    margin-right: auto;
+  }
+  .close {
+    left:50%;
+  }
+  .popup .popup-item:nth-child(2) {
+    margin-left: 0;
+  }
+  .popup .popup-item:nth-child(3) {
+    margin-left: 0;
+  }
+  .popup .popup-item:nth-child(4) {
+    margin-left: 0;
+  }
+  .err_phone{
+    width: 100%;
+    left: 0;
+    padding: 30px 0 0 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .err_phone .container{
+    width: 80%;
+    margin-right: auto;
+  }
+  .err_phone .close {
+  left: 50%;
+}
+}
+
