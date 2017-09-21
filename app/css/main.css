@@ -461,6 +461,10 @@
     padding-left: 0; } }
 
 @media (max-width: 768px) {
+  #investments .numbers-first {
+    margin-bottom: 5px; }
+  #investments .numbers-last {
+    margin-top: 5px; }
   #media .slick .item {
     padding-left: 10px;
     padding-right: 10px; }
@@ -581,6 +585,10 @@
     display: none; } }
 
 @media (max-width: 480px) {
+  #investments .row .col-md-6 p {
+    padding: 0 10px; }
+  #question h3 {
+    padding-left: 10px; }
   #media .slick .item .quote {
     font-size: 16px; }
   .includes-bottom-btn button {

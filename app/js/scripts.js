@@ -20,17 +20,20 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 4,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.slick-prev2'),
         nextArrow: $('.slick-next2')
     });
     $('#openings .openings-size-320 .slick').slick({
         centerMode: true,
         slidesToShow: 1,
+				swipeToSlide: true,
     });
     $('#media .media-size .slick').slick({
         centerMode: true,
         slidesToShow: 3,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.slick-prev'),
         nextArrow: $('.slick-next')
     });
@@ -38,6 +41,7 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 1,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.openings-arrow-left3'),
         nextArrow: $('.openings-arrow-right3')
     });
@@ -45,17 +49,20 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 5,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.slick-prev3'),
         nextArrow: $('.slick-next3')
     });
     $('#mycoffeein .mycoffeein-size-320 .slick').slick({
         centerMode: true,
         slidesToShow: 1,
+				swipeToSlide: true,
     });
     $('#coffeein .slick').slick({
         centerMode: true,
         slidesToShow: 1,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.openings-arrow-left5'),
         nextArrow: $('.openings-arrow-right5')
     });
@@ -63,6 +70,7 @@ $(document).ready(function(){
         centerMode: true,
         slidesToShow: 1,
         centerPadding: 0,
+				swipeToSlide: true,
         prevArrow: $('.openings-arrow-left6'),
         nextArrow: $('.openings-arrow-right6')
     });
@@ -129,7 +137,7 @@ var offsetY = 0.5 - e.pageY / h;
  
 $(".beans").each(function(i, el) {
 var offset = parseInt($(el).data('offset'));
-var translate = "translate3d(" + Math.round(offsetX * offset) + "px, 0px, 0px)";
+var translate = "translate3d(" + Math.round(offsetX * offset) + "px, "+ Math.round(offsetY * (offset / 5)) +"px, 0px)";
  
 $(el).css({
 '-webkit-transform': translate,
