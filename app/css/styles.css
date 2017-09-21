@@ -1362,7 +1362,7 @@ nav ul li a:hover {
 
 @media all and (max-width:1400px) {
   #mycoffeein .mycoffeein-items {
-    height: 200px;
+    height: 250px
     transition: all .3s;
   }
 }
