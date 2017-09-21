@@ -703,7 +703,11 @@
         <div class="container">
                 <div class="d-flex row justify-content-between align-items-center">
                     <div class="col-md-4 col-12 be-partner callback-item">Стать нашим партнером</div>
-                    <div class="col-md-4 col-12 callback-item"><input type="text" class="phone" placeholder="Телефон"></div>
+                    <div class="col-md-4 col-12 callback-item">
+                        <input type="text" class="phone" placeholder="Телефон">
+                        <span class="incorrect">Введите корректный номер</span>
+                        <div class="cross clear-phone"></div>
+                    </div>
                     <div class="col-md-4 col-12 callback-item"><button type="submit" class="btn show_popup show_popup5" rel="popup5">Оставить заявку</button></div>
                 </div>
         </div>
@@ -1051,7 +1055,11 @@
         <div class="container">
                 <div class="d-flex row justify-content-between align-items-center">
                         <div class="col-md-4 col-12 be-partner callback-item">Стать нашим партнером</div>
-                        <div class="col-md-4 col-12 callback-item"><input type="text" class="phone" placeholder="Телефон"></div>
+                        <div class="col-md-4 col-12 callback-item">
+                            <input type="text" class="phone" placeholder="Телефон">
+                            <span class="incorrect">Введите корректный номер</span>
+                            <div class="cross clear-phone"></div>
+                        </div>
                         <div class="col-md-4 col-12 callback-item"><button type="submit" class="btn show_popup show_popup5" rel="popup5">Оставить заявку</button></div>
                 </div>
         </div>
@@ -1205,7 +1213,11 @@
         <div class="container">
             <div class="d-flex row justify-content-between align-items-center">
                     <div class="col-md-4 col-12 be-partner callback-item">Стать нашим партнером</div>
-                    <div class="col-md-4 col-12 callback-item"><input type="text" class="phone" placeholder="Телефон"></div>
+                    <div class="col-md-4 col-12 callback-item">
+                        <input type="text" class="phone" placeholder="Телефон">
+                        <span class="incorrect">Введите корректный номер</span>
+                        <div class="cross clear-phone"></div>
+                    </div>
                     <div class="col-md-4 col-12 callback-item">
                       <button type="submit" class="btn show_popup show_popup4" rel="popup4">Оставить заявку</button>
                     </div>
@@ -1233,7 +1245,7 @@
         <div class="container">
             <div class="d-flex row justify-content-between">
                 <div class="col-md-6 col-12 footer-content">Coffee In, 2017</div>
-                <div class="col-md-6 col-12 footer-content">Сайт создан: <img src="img/start-go.png"></div>
+                <div class="col-md-6 col-12 footer-content">Сайт создан: <a href="https://start-go.pro"><img src="img/start-go.png"></div></a>
             </div>
         </div>
     </footer>
@@ -1266,7 +1278,12 @@
     <div class="container">
         <form class="formPopup" method="POST">
             <div class="col-md-12 popup-item">Стать нашим партнером</div>
-            <div class="col-md-8 popup-item"><input type="text" class="phone" placeholder="Телефон" required></div>
+            <div class="col-md-8 popup-item">
+                    <input type="text" class="phone" placeholder="Телефон" required>
+                    <span class="incorrect in-phone">Введите корректный номер</span>
+                    <div class="cross clear-phone"></div>
+                    <div class="accept accept-phone"></div>
+            </div>
             <div class="col-md-12 popup-item">
                 <button type="submit" class="btn show_popup show_popup6" rel="popup6">Оставить заявку</button>
             </div>
@@ -1285,10 +1302,20 @@
     <div class="container">
         <form class="formPopup" method="POST">
             <div class="col-md-12 popup-item">Полчить коммерческое предложение</div>
-            <div class="col-md-8 popup-item"><input type="text" class="phone" placeholder="Телефон" required></div>
-            <div class="col-md-8 popup-item"><input type="text" class="email" placeholder="Адрес эл. почты" required></div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="phone" oninput="console.log(this)" placeholder="Телефон" required>
+                <span class="incorrect in-phone">Введите корректный номер</span>
+                <div class="cross cross-phone"></div>
+                <div class="accept accept-phone"></div>
+            </div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="email" oninput="checkEmail(this)" placeholder="Адрес эл. почты" required>
+                <div class="cross cross-email"></div>
+                <div class="accept accept-email"></div>
+                <span class="incorrect in-email">Введите корректный адрес</span>
+            </div>
             <div class="col-md-12 popup-item">
-                <button class="btn show_popup show_popup7" rel="popup6">Оставить заявку</button>
+                <button type="submit" class="btn show_popup show_popup7" rel="popup6">Оставить заявку</button>
             </div>
         </form>
     </div>
@@ -1305,8 +1332,18 @@
     <div class="container">
         <form class="formPopup" method="POST">
             <div class="col-md-12 popup-item">Полчить бизнес план</div>
-            <div class="col-md-8 popup-item"><input type="text" class="phone" placeholder="Телефон" required></div>
-            <div class="col-md-8 popup-item"><input type="text" class="email" placeholder="Адрес эл. почты" required></div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="phone" placeholder="Телефон" required>
+                <span class="incorrect in-phone">Введите корректный номер</span>
+                <div class="cross cross-phone"></div>
+                <div class="accept accept-phone"></div>
+            </div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="email" oninput="checkEmail(this)" placeholder="Адрес эл. почты" required>
+                <div class="cross cross-email"></div>
+                <div class="accept accept-email"></div>
+                <span class="incorrect in-email">Введите корректный адрес</span>
+            </div>
             <div class="col-md-12 popup-item">
                 <button class="btn show_popup show_popup7" rel="popup6">Оставить заявку</button>
             </div>
@@ -1325,9 +1362,19 @@
     <div class="container">
        <form class="formPopup" method="POST">
             <div class="col-md-12 popup-item">Задать вопрос</div>
-           <div class="col-md-8 popup-item"><input type="text" class="phone" placeholder="Телефон" required></div>
-           <div class="col-md-8 popup-item"><input type="text" class="email" placeholder="Адрес эл. почты" required></div>
-           <div class="col-md-8 popup-item"><textarea cols="25" rows="10" type="text" class="quest" placeholder="Ваш вопрос"></textarea></div>
+           <div class="col-md-8 popup-item">
+                <input type="text" class="phone" placeholder="Телефон" required>
+                <span class="incorrect in-phone">Введите корректный номер</span>
+                <div class="cross cross-phone"></div>
+                <div class="accept accept-phone"></div>
+           </div>
+           <div class="col-md-8 popup-item">
+                <input type="text" class="email" oninput="checkEmail(this)" placeholder="Адрес эл. почты" required>
+                <div class="cross cross-email"></div>
+                <div class="accept accept-email"></div>
+                <span class="incorrect in-email">Введите корректный адрес</span>
+           </div>
+           <div class="col-md-8 popup-item"><textarea cols="25" rows="10" type="text" class="quest" placeholder="Ваш вопрос" required></textarea></div>
            <div class="col-md-12 popup-item">
                <button class="btn show_popup show_popup8" rel="popup6">Оставить заявку</button>
            </div>
@@ -1347,9 +1394,19 @@
     <div class="container">
         <form class="formPopup" method="POST">
             <div class="col-md-12 popup-item">Задать вопрос</div>
-            <div class="col-md-8 popup-item"><input type="text" class="phone" placeholder="Телефон" required></div>
-            <div class="col-md-8 popup-item"><input type="text" class="email" placeholder="Адрес эл. почты" required></div>
-            <div class="col-md-8 popup-item"><textarea cols="25" rows="5" type="text" class="quest" placeholder="Ваш вопрос"></textarea></div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="phone" placeholder="Телефон" required>
+                <span class="incorrect in-phone">Введите корректный номер</span>
+                <div class="cross cross-phone"></div>
+                <div class="accept accept-phone"></div>
+            </div>
+            <div class="col-md-8 popup-item">
+                <input type="text" class="email" oninput="checkEmail(this)" placeholder="Адрес эл. почты" required>
+                <div class="cross cross-email"></div>
+                <div class="accept accept-email"></div>
+                <span class="incorrect in-email">Введите корректный адрес</span>
+            </div>
+            <div class="col-md-8 popup-item"><textarea cols="25" rows="5" type="text" class="quest" placeholder="Ваш вопрос" required></textarea></div>
             <div class="col-md-12 popup-item">
                 <button class="btn show_popup show_popup8" rel="popup6">Оставить заявку</button>
             </div>

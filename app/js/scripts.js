@@ -59,6 +59,7 @@ $(document).ready(function(){
 												}
 											}]
     });
+		$('.mycoffeein-size .mycoffeein-items').css('height', $('.mycoffeein-size .item').innerWidth() + 'px');
     $('#mycoffeein .mycoffeein-size-320 .slick').slick({
         centerMode: true,
         slidesToShow: 1,
@@ -186,10 +187,46 @@ $("body").on("click",'[href*="#"]',function(e){
     return false;
   });
 });*/
- 
- 
+
+function hide(el) {
+	setTimeout(()=> el.fadeOut(500),5000);
+}
+
+// function checkPhone(el) {
+// 	console.log($(el).val().length);
+// 	if($(el).val().length === 17) {
+// 		$('.accept-phone').fadeIn(500);
+// 		hide($('.accept-phone'));
+// 		$('.cross-phone').fadeOut(500);
+// 		$('.in-phone').fadeOut(500);
+// 	} else {
+// 		$('.accept-phone').fadeOut(500);
+// 		$('.cross-phone').fadeIn(500);
+// 		$('.in-phone').fadeIn(500);
+// 		hide($('.cross-phone'));
+// 		hide($('.in-phone'));
+// 	}
+// };
+
+function checkEmail(el) {
+	var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(reg.test($(el).val())) {
+		$('.accept-email').fadeIn(500);
+		hide($('.accept-email'));
+		$('.cross-email').fadeOut(500);
+		$('.in-email').fadeOut(500);
+	} else {
+		$('.accept-email').fadeOut(500);
+		$('.cross-email').fadeIn(500);
+		$('.in-email').fadeIn(500);
+		hide($('.cross-email'));
+		hide($('.in-email'));
+	}
+};
  
 function showModalWindow() {
+		$('.incorrect').fadeOut(500);
+		$('.cross').fadeOut(500);
     $('.popup5').fadeIn(500);
     $('body').append("<div id='overlay'></div>");
     $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
@@ -202,18 +239,22 @@ function showModalWindow() {
  
  
 function showErrWindow() {
-    $('.err_phone').fadeIn(500);
-    $('body').append("<div id='overlay'></div>");
-    $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-		setTimeout(()=> {
-        $('.err_phone').fadeOut(100);
-        $('#overlay').remove();
-		}, 2000);
-    $('a.close').click(function (e) {
-        e.preventDefault();
-        $('.err_phone').fadeOut(100);
-        $('#overlay').remove();
-  });
+		$('.incorrect').fadeIn(500);
+		$('.cross').fadeIn(500);
+		setTimeout(()=> $('.incorrect').fadeOut(500),3000);
+		setTimeout(()=> $('.cross').fadeOut(500),3000);
+//     $('.err_phone').fadeIn(500);
+//     $('body').append("<div id='overlay'></div>");
+//     $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
+// 		setTimeout(()=> {
+//         $('.err_phone').fadeOut(100);
+//         $('#overlay').remove();
+// 		}, 2000);
+//     $('a.close').click(function (e) {
+//         e.preventDefault();
+//         $('.err_phone').fadeOut(100);
+//         $('#overlay').remove();
+//   });
 }
  
  
@@ -262,18 +303,23 @@ $(function () {
 			url: "mail.php",
 			data: {phone: $input.val()}
 		});
-
-		$('#pop6').fadeIn(500);
+			$('.accept-phone').fadeIn(500);
+			setTimeout(()=>$('.accept-phone').fadeOut(500), 3000)
+			$('.cross').fadeOut(500);
+		// $('#pop6').fadeIn(500);
 		setTimeout(()=>{
-			$('#pop6').fadeOut(500);
+			// $('#pop6').fadeOut(500);
 			$('.popup').fadeOut(1000);
 			$('#overlay').fadeOut(1000);
 		}, 1500);
+
 } else {
-		$('#pop7').fadeIn(500);
+			$('.in-phone').fadeIn(500);
+			$('.cross').fadeIn(500);
 		setTimeout(()=>{
-			$('#pop7').fadeOut(500);
-		}, 1500);	
+
+			$('.in-phone').fadeOut(500);
+		}, 3300);
 }
     $("body").append("<div id='overlay'></div>");
     return false;
@@ -283,23 +329,28 @@ $(function () {
  $('button.show_popup7').click(function () {
 		var $input = $(this).parent().prev().prev().find('.phone');
 		if($input.val().length === 17) {
-		var email = $(this).parent().prev().find('input');
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: {phone: $input.val(), mail: $email}
-		});
-		$('#pop6').fadeIn(500);
-		setTimeout(()=>{
+			$('.accept-phone').fadeIn(500);
+			setTimeout(()=>$('.accept-phone').fadeOut(500), 3000)
+			$('.cross-phone').fadeOut(500);
+			var email = $(this).parent().prev().find('input');
+				$.ajax({
+				type: "POST",
+				url: "mail.php",
+				data: {phone: $input.val(), mail: $email}
+				});
+			$('#pop6').fadeIn(500);
+			setTimeout(()=>{
 			$('#pop6').fadeOut(500);
 			$('.popup').fadeOut(1000);
 			$('#overlay').fadeOut(1000);
-		}, 1500);
+			}, 1500);
 } else {
-		$('#pop7').fadeIn(500);
-		setTimeout(()=>{
-			$('#pop7').fadeOut(500);
-		}, 1500);	
+			$('.in-phone').fadeIn(500);
+			$('.cross-phone').fadeIn(500);
+		// $('#pop7').fadeIn(500);
+			setTimeout(()=>{
+			$('.in-phone').fadeOut(500);
+			}, 3000);	
 }
     $("body").append("<div id='overlay'></div>");
     return false;
@@ -309,6 +360,9 @@ $(function () {
  $('button.show_popup8').click(function () {
 		var $input = $(this).parent().prev().prev().prev().find('.phone');
 		if($input.val().length === 17) {
+			$('.accept-phone').fadeIn(500);
+			setTimeout(()=>$('.accept-phone').fadeOut(500), 3000)
+			$('.cross-phone').fadeOut(500);
 		var email = $(this).parent().prev().prev().find('input'),
 				message = $(this).parent().prev().find('textarea');
 		$.ajax({
@@ -323,10 +377,13 @@ $(function () {
 			$('#overlay').fadeOut(1000);
 		}, 1500);
 } else {
-		$('#pop7').fadeIn(500);
+			$('.in-phone').fadeIn(500);
+			$('.cross-phone').fadeIn(500);
+		// $('#pop7').fadeIn(500);
 		setTimeout(()=>{
-			$('#pop7').fadeOut(500);
-		}, 1500);	
+			$('.in-phone').fadeOut(500);
+			// $('#pop7').fadeOut(500);
+		}, 2000);	
 }
     $("body").append("<div id='overlay'></div>");
     return false;

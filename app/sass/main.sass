@@ -1,3 +1,48 @@
+//______________ Validation
+.popup-item
+	position: relative
+.incorrect
+	font-size: 16px
+	display: none
+	color: #d65250
+	bottom: -30px
+	left: 0
+	right: 0
+	position: absolute
+.in-email
+	bottom: -25px
+.accept
+	display: none
+	right: 0
+	top: 20%
+	position: absolute
+	width: 17px
+	height: 14px
+	background-image: url('../img/accept.png')
+	background-size: 100% 100%
+.cross
+	display: none
+	&:after, &:before
+		right: 20%
+		top: 35%
+		position: absolute
+		display: block
+		width: 20px
+		content: ''
+		height: 2px
+		background-color: #d65250
+	&:after
+		transform: rotate(45deg)
+	&:before
+		transform: rotate(-45deg)
+.popup-item .cross
+	&:after, &:before
+		right: 0
+.popup-item .cross-email
+	&:after, &:before
+		top: 60%
+.popup-item .accept-email
+	top: 50%
 //______________ I M A G E S
 #includes 
 	.includes-left, .includes-left-320
@@ -56,6 +101,8 @@
 		background-repeat: no-repeat
 	.mycoffeein-size-320 .item
 //_____________ T O P __  H E A D
+.callback-item
+	position: relative
 .tablet
 	display: none
 .err_phone .container .popup-item
@@ -233,7 +280,25 @@
 		height: 3px
 
 //_____________ M E D I A
+@media (max-width: 1980px)//-LG
+	#media .op
+		opacity: 1
+	#includes 
+		background: linear-gradient(to right, #ffffff 0%,#ffffff 53%,#aeca1e 53%,#aeca1e 100%)
+	#coffeein
+		background-position: right -7% bottom, right bottom
+	#franchisee .numbers
+		margin-bottom: 30px
+
 @media (max-width: 1390px)//-md
+	#media .op
+		opacity: 0
+	#includes 
+		background: linear-gradient(to right, #ffffff 0%,#ffffff 56%,#aeca1e 56%,#aeca1e 100%)
+	#coffeein
+		background-position: right -28% bottom, right bottom
+	#franchisee .numbers
+		margin-bottom: 0
 	.np
 		&>.col-md-6
 			flex-basis: 46%
@@ -300,6 +365,8 @@
 		&>.col-md-6
 			flex-basis: auto
 @media (max-width: 1030px)
+	header li.p-1
+		padding: .20rem!important
 	#investments .row .col-md-6
 		h3, p
 			padding-left: 20px

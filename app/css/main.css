@@ -1,3 +1,57 @@
+.popup-item {
+  position: relative; }
+
+.incorrect {
+  font-size: 16px;
+  display: none;
+  color: #d65250;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  position: absolute; }
+
+.in-email {
+  bottom: -25px; }
+
+.accept {
+  display: none;
+  right: 0;
+  top: 20%;
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  background-image: url("../img/accept.png");
+  background-size: 100% 100%; }
+
+.cross {
+  display: none; }
+  .cross:after, .cross:before {
+    right: 20%;
+    top: 35%;
+    position: absolute;
+    display: block;
+    width: 20px;
+    content: '';
+    height: 2px;
+    background-color: #d65250; }
+  .cross:after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .cross:before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.popup-item .cross:after, .popup-item .cross:before {
+  right: 0; }
+
+.popup-item .cross-email:after, .popup-item .cross-email:before {
+  top: 60%; }
+
+.popup-item .accept-email {
+  top: 50%; }
+
 #includes .includes-left .item1, #includes .includes-left-320 .item1 {
   background-image: url("../img/icon-map.png"); }
 
@@ -66,6 +120,9 @@
 #mycoffeein .mycoffeein-size .item {
   background-position: center;
   background-repeat: no-repeat; }
+
+.callback-item {
+  position: relative; }
 
 .tablet {
   display: none; }
@@ -276,7 +333,29 @@
 .cmn-toggle-switch span, .cmn-toggle-switch span:after, .cmn-toggle-switch span:before {
   height: 3px; }
 
+@media (max-width: 1980px) {
+  #media .op {
+    opacity: 1; }
+  #includes {
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(53%, #ffffff), color-stop(53%, #aeca1e), to(#aeca1e));
+    background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 53%, #aeca1e 53%, #aeca1e 100%);
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 53%, #aeca1e 53%, #aeca1e 100%); }
+  #coffeein {
+    background-position: right -7% bottom, right bottom; }
+  #franchisee .numbers {
+    margin-bottom: 30px; } }
+
 @media (max-width: 1390px) {
+  #media .op {
+    opacity: 0; }
+  #includes {
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(56%, #ffffff), color-stop(56%, #aeca1e), to(#aeca1e));
+    background: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 56%, #aeca1e 56%, #aeca1e 100%);
+    background: linear-gradient(to right, #ffffff 0%, #ffffff 56%, #aeca1e 56%, #aeca1e 100%); }
+  #coffeein {
+    background-position: right -28% bottom, right bottom; }
+  #franchisee .numbers {
+    margin-bottom: 0; }
   .np > .col-md-6 {
     -webkit-flex-basis: 46%;
         -ms-flex-preferred-size: 46%;
@@ -362,6 +441,8 @@
             flex-basis: auto; } }
 
 @media (max-width: 1030px) {
+  header li.p-1 {
+    padding: 0.2rem !important; }
   #investments .row .col-md-6 h3, #investments .row .col-md-6 p {
     padding-left: 20px; }
   #investments .row .col-md-6 h4 {
