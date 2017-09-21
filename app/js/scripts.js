@@ -51,7 +51,13 @@ $(document).ready(function(){
         centerPadding: 0,
 				swipeToSlide: true,
         prevArrow: $('.slick-prev3'),
-        nextArrow: $('.slick-next3')
+        nextArrow: $('.slick-next3'),
+				responsive: [{
+												breakpoint: 1024,
+												settings: {
+													slidesToShow: 4
+												}
+											}]
     });
     $('#mycoffeein .mycoffeein-size-320 .slick').slick({
         centerMode: true,
