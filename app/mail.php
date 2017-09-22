@@ -1,8 +1,8 @@
 <?php 
 
-	$headers = 'From: info@coffeein.imonlyone.ru
+	$headers = 'From: info@mycoffeein.ru
 ' .
-                'Reply-To: wc34fun@mail.ru
+                'Reply-To: support@argus.pro
 ' .
                 'X-Mailer: PHP/';
 
@@ -13,7 +13,7 @@
 	if(!empty($_POST['message'])) $letter .="Сообщение: ".$_POST['message']."\r\n";
 
 	echo $letter ."\r\n";
-	if (mail("wc34fun@mail.ru", $theme, $letter, $headers)){
+	if (mail("support@argus.pro", $theme, $letter, $headers)){
 		echo "fine";
 		//header("Location: /testform/thankyou.php");
 	} else {
