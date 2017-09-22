@@ -266,17 +266,18 @@ $(function() {
       showErrWindow();
     } else {
       showModalWindow();
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: {phone: $input.val()}
-		});
+		//  _____________________________________________________ A J A X ()
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "mail.php",
+		// 	data: {phone: $input.val()}
+		// });
     }
   });
 });
  
  
- 
+
  
 $(function () {
   $('button.show_popup1, button.show_popup2, button.show_popup3, button.show_popup4-1').click(function () {
@@ -298,11 +299,12 @@ $(function () {
   $('button.show_popup6').click(function () {
 		var $input = $(this).parent().prev().find('.phone');
 		if($input.val().length === 17) {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: {phone: $input.val()}
-		});
+		//  _____________________________________________________ A J A X ()
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "mail.php",
+		// 	data: {phone: $input.val()}
+		// });
 			$('.accept-phone').fadeIn(500);
 			setTimeout(()=>$('.accept-phone').fadeOut(500), 3000)
 			$('.cross').fadeOut(500);
@@ -333,11 +335,12 @@ $(function () {
 			setTimeout(()=>$('.accept-phone').fadeOut(500), 3000)
 			$('.cross-phone').fadeOut(500);
 			var email = $(this).parent().prev().find('input');
-				$.ajax({
-				type: "POST",
-				url: "mail.php",
-				data: {phone: $input.val(), mail: $email}
-				});
+				//  _____________________________________________________ A J A X ()
+				// $.ajax({
+				// type: "POST",
+				// url: "mail.php",
+				// data: {phone: $input.val(), mail: $email}
+				// });
 			$('#pop6').fadeIn(500);
 			setTimeout(()=>{
 			$('#pop6').fadeOut(500);
@@ -365,11 +368,12 @@ $(function () {
 			$('.cross-phone').fadeOut(500);
 		var email = $(this).parent().prev().prev().find('input'),
 				message = $(this).parent().prev().find('textarea');
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: {phone: $input.val(), email: email, message: message}
-		});
+		//  _____________________________________________________ A J A X ()
+		// $.ajax({
+		// 	type: "POST",
+		// 	url: "mail.php",
+		// 	data: {phone: $input.val(), email: email, message: message}
+		// });
 		$('#pop6').fadeIn(500);
 		setTimeout(()=>{
 			$('#pop6').fadeOut(500);
