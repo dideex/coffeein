@@ -1,19 +1,23 @@
 <?php 
-	$account = "wc34fun@mail.ru";
-	$headers = 'From: info@localhost
+
+	$headers = 'From: info@coffeein.imonlyone.ru
 ' .
-                'Reply-To: '.$account.'
+                'Reply-To: wc34fun@mail.ru
 ' .
                 'X-Mailer: PHP/';
 
-	$theme = "Письмо от ".$_POST['phone'];
-	
-	$letter ="Телефон: ".$_POST['phone']."\r\n";
-	if(!empty($_POST['email'])) $letter .="Email: ".$_POST['email']."\r\n";
-	if(!empty($_POST['message'])) $letter .="Письмо: ".$_POST['message']."\r\n";
-	if (mail($account, $theme, $letter, $headers)){
+	$theme = "Телефон: ".$_POST['phone']."  Заявка на ".$_POST['form'];
+
+	$letter ="Телефон: ".$_POST['phone']."\r\n"."Заявка на ".$_POST['form']."\r\n";
+	if(!empty($_POST['mail'])) $letter .="Почта: ".$_POST['mail']."\r\n";
+	if(!empty($_POST['message'])) $letter .="Сообщение: ".$_POST['message']."\r\n";
+
+	echo $letter ."\r\n";
+	if (mail("wc34fun@mail.ru", $theme, $letter, $headers)){
+		echo "fine";
 		//header("Location: /testform/thankyou.php");
 	} else {
+		echo "error";
 		//header("Location: /testform");
 	}
 
